@@ -22,7 +22,15 @@ Ops: amitp, David, Frogboffin
 
 Rob goes by robjetbolt, and Tim goes by timjetbolt.
 
-You'll probably want to register your nick to prevent people from impersonating you. To do so, select a nick you like by doing `/nick myname`, and then (if the nick isn't already taken) type the following command into the chat (make sure there's no space before the first slash!) `/msg nickserv register mypasswordhere myemail@address.com`. The email parameter is optional. Next time you log on, choose your nick and type `msg nickserv id mypasswordhere` to identify yourself; your nick will be changed in 60 seconds if you don't identify yourself.
+You'll probably want to register your nick to prevent people from impersonating you. To do so, select a nick you like by doing `/nick myname`, and then (if the nick isn't already taken) type the following command into the chat (make sure there's no space before the first slash!):
+    
+    /msg nickserv register mypasswordhere myemail@address.com.
+
+The email parameter is optional. Next time you log on, choose your nick and type
+
+    /msg nickserv id mypasswordhere
+
+to identify yourself; your nick will be changed in 60 seconds if you don't identify yourself.
 
 Current beta testers are indicated by voice (+v). If you're a beta tester, make sure you're registered and identified, and then ask an op to add you to the access list.
 
