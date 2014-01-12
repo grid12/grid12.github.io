@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://localhost:4000</loc>
+        <loc>http://grid12.tk</loc>
     </url>
     
     
     <url>
-        <loc>http://localhost:4000/articles/code-highlighting-post</loc>
+        <loc>http://grid12.tk/articles/code-highlighting-post</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/readability-feature-post</loc>
+        <loc>http://grid12.tk/articles/readability-feature-post</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/sample-post-images</loc>
+        <loc>http://grid12.tk/articles/sample-post-images</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/readability-post</loc>
+        <loc>http://grid12.tk/articles/readability-post</loc>
     </url>
     
     <url>
-        <loc>http://localhost:4000/articles/sample-post</loc>
+        <loc>http://grid12.tk/articles/sample-post</loc>
     </url>
     
 </urlset>
