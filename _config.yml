@@ -2,8 +2,7 @@ title:            Grid12 Nexus
 tagline:          A 2D Tank MMO
 description:      An unofficial site about Jetbolt Game's Grid12.
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
-
+url:              http://grid12.tk
 # Owner/author information
 owner:
   name:           David
