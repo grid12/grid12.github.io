@@ -37,6 +37,9 @@ links:
   - title: Wiki
     url: https://github.com/grid12/grid12.github.io/wiki/Grid12-Wiki
     external: true
+  - title: Tank/Enemy Stats
+    url: http://www.redblobgames.com/x/jetbolt/viewer/
+    external: true
   - title: Chat
     url: /irc/
   - title: About
