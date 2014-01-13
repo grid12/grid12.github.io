@@ -6,15 +6,15 @@
 <head>
 <meta charset="utf-8">
 <title>Grid12 Nexus</title>
-<meta name="description" content="A responsive Jekyll theme with editorial tendencies by designer Michael Rose.">
-<meta name="keywords" content="Jekyll, theme, responsive, blog, template">
+<meta name="description" content="Grid12 Nexus Main Page.">
+<meta name="keywords" content="">
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Grid12 Nexus">
-<meta property="og:description" content="A responsive Jekyll theme with editorial tendencies by designer Michael Rose.">
+<meta property="og:description" content="Grid12 Nexus Main Page.">
 <meta property="og:url" content="http://grid12.tk/index.html">
 <meta property="og:site_name" content="Grid12 Nexus">
 
@@ -59,7 +59,7 @@
 
 </head>
 
-<body class="home" itemscope itemtype="http://schema.org/WebPage">
+<body class="page" itemscope itemtype="http://schema.org/WebPage">
 
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
 
@@ -86,29 +86,14 @@
 	</div><!-- /.top-navigation -->
 </div><!-- /.navigation-wrapper -->
 
-<div class="image-wrap">
-  <img src="http://grid12.tk/images/texture-feature-01.jpg" alt=" feature image" itemprop="primaryImageOfPage">
-  <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
-</div><!-- /.image-wrap -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 
-<div class="article-author-side">
-  <img src="http://grid12.tk/images/bio-photo.jpg" class="bio-photo" alt="David bio photo"></a>
-<h3>David</h3>
-<p>A Grid12 player named David</p>
-
-
-
-
-
-
-
-
+<div>
+  <center>
+    <div id="game"><iframe src="/game_embed.html" height="600" width="800" frameBorder="0">Grid12 Nexus uses frames. Please get a modern browser.</iframe></div>
+    <p><a href="javascript:void(0)" id="reloadgame">Reload Game</a></p>
+  </center>
 </div>
-
-<div id="index" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
-  <h3><a href="http://grid12.tk/articles/">Articles</a></h3>
-  
-</div><!-- /#index -->
 
 <div class="footer-wrap">
   <footer>
@@ -121,6 +106,23 @@
 <script>window.jQuery || document.write('<script src="http://grid12.tk/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="http://grid12.tk/assets/js/scripts.min.js"></script>
 
-  
+
+<script type="text/javascript">
+
+var sourcehtml = $('#game').html();
+
+$('#reloadgame').click(function(){
+    $('#game').html(sourcehtml);
+});
+
+/*$('#darkbg').click(function(){
+    document.bgColor='#101010'
+});
+
+$('#lightbg').click(function(){
+    document.bgColor='#fff'
+});*/
+</script>
+
 </body>
 </html>

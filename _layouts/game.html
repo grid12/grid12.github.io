@@ -1,0 +1,51 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="page" itemscope itemtype="http://schema.org/WebPage">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<div>
+  <center>
+    <div id="game"><iframe src="/game_embed.html" height="600" width="800" frameBorder="0">Grid12 Nexus uses frames. Please get a modern browser.</iframe></div>
+    <p><a href="javascript:void(0)" id="reloadgame">Reload Game</a></p>
+  </center>
+</div>
+
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}
+
+<script type="text/javascript">
+
+var sourcehtml = $('#game').html();
+
+$('#reloadgame').click(function(){
+    $('#game').html(sourcehtml);
+});
+
+/*$('#darkbg').click(function(){
+    document.bgColor='#101010'
+});
+
+$('#lightbg').click(function(){
+    document.bgColor='#fff'
+});*/
+</script>
+
+</body>
+</html>
