@@ -7,7 +7,7 @@
 {% include _head.html %}
 </head>
 
-<body class="page" itemscope itemtype="http://schema.org/WebPage">
+<body id="all" class="page" itemscope itemtype="http://schema.org/WebPage">
 
 {% include _browser-upgrade.html %}
 
@@ -18,7 +18,10 @@
 <div>
   <center>
     <div id="game"><iframe src="/game_embed.html" height="600" width="800" frameBorder="0">Grid12 Nexus uses frames. Please get a modern browser.</iframe></div>
-    <p><a href="javascript:void(0)" id="reloadgame">Reload Game</a></p>
+    <p>
+      <a href="javascript:void(0)" id="reloadgame">Reload Game</a> - 
+      <a href="javascript:void(0)" id="togglebg">Toggle Background Color</a>
+    </p>
   </center>
 </div>
 
@@ -38,21 +41,27 @@ $('#reloadgame').click(function(){
     $('#game').html(sourcehtml);
 });
 
+/*Prevent site from scrolling - scrolling when zooming is really annoying*/
 function handleWheelEvent(e){
     e.preventDefault();
 }
-
 window.addEventListener('DOMMouseScroll', handleWheelEvent, false);
 /** IE/Opera. */
 window.onmousewheel = document.onmousewheel = handleWheelEvent;
 
-/*$('#darkbg').click(function(){
-    document.bgColor='#101010'
-});
+/*Background color toggle*/
 
-$('#lightbg').click(function(){
-    document.bgColor='#fff'
-});*/
+var isDark = false;
+
+$('#togglebg').click(function(){
+  if(isDark){
+    $('#all').css("background-color", "");
+    isDark = false;
+  }else{
+    $('#all').css("background-color", "rgb(20,20,20)")
+    isDark = true;
+  }
+});
 </script>
 
 </body>
