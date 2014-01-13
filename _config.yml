@@ -31,8 +31,11 @@ bing_verify:
 links:
   - title: Play
     url: /
+  - title: Forums
+    url: http://grid12.proboards.com/board/1/grid12
+    external: true
   - title: Wiki
-    url: https://github.com/grid12/grid12.github.io/wiki
+    url: https://github.com/grid12/grid12.github.io/wiki/Grid12-Wiki
     external: true
   - title: Chat
     url: /irc/
