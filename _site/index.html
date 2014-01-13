@@ -115,6 +115,14 @@ $('#reloadgame').click(function(){
     $('#game').html(sourcehtml);
 });
 
+function handleWheelEvent(e){
+    e.preventDefault();
+}
+
+window.addEventListener('DOMMouseScroll', handleWheelEvent, false);
+/** IE/Opera. */
+window.onmousewheel = document.onmousewheel = handleWheelEvent;
+
 /*$('#darkbg').click(function(){
     document.bgColor='#101010'
 });
